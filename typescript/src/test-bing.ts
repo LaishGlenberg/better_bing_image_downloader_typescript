@@ -4,11 +4,12 @@
  */
 
 import { Bing } from "./bing.js";
+import 'dotenv/config';
 
 async function main() {
   const bing = new Bing({
-    query: "Laish Glenberg Linkedin ASU CS",
-    limit: 3,
+    query: process.env.BING_QUERY || "dogs",
+    limit: 1,
     outputDir: "./test-output",
     adult: "moderate",
     verbose: true,
