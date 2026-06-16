@@ -19,5 +19,5 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "test-scripts/test-bing.ts"]
+  "include": ["src"]
 }

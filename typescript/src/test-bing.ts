@@ -3,11 +3,11 @@
  * Run with: npx tsc && node dist/test-bing.js
  */
 
-import { Bing } from "../src/bing.js";
+import { Bing } from "./bing.js";
 
 async function main() {
   const bing = new Bing({
-    query: "cats",
+    query: "Laish Glenberg Linkedin ASU CS",
     limit: 3,
     outputDir: "./test-output",
     adult: "moderate",

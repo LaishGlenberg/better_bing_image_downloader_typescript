@@ -299,7 +299,10 @@ export class Bing {
     let resp: Response;
     try {
       resp = await fetch(link, {
-        headers: DEFAULT_HEADERS,
+        headers: {
+          ...DEFAULT_HEADERS,
+          Referer: "https://www.bing.com/",
+        },
         signal: AbortSignal.timeout(this.timeout * 1000),
       });
       if (!resp.ok) {
